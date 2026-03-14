@@ -1,3 +1,14 @@
+header {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -15,14 +26,44 @@ address {
     padding-bottom: 10px;
 }
 
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
 ul.list {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .list__card {
     padding: 10px 15px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
+}
+
+.authors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.list__card {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: white;
+    min-width: 200px;
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.author-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.article-count {
+    font-size: 0.9rem;
 }

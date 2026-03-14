@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Elenco Articoli
+{% endblock %}
+
 {% block body %}
-<div class="container mt-5">
-    <h1>I miei Articoli</h1>
-    
-    {# Usiamo la variabile articles_json che abbiamo creato nel controller #}
-    <div id="app-test" data-articles="{{ articles_json|e('html_attr') }}">
-        <p>Caricamento articoli...</p>
-    </div>
-</div>
+	<div class="container mt-5">
+		<div id="app-test" data-articles="{{ articles_json|e('html_attr') }}">
+			<p>Caricamento articoli...</p>
+		</div>
+	</div>
 {% endblock %}

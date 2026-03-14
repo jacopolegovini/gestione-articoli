@@ -20,6 +20,7 @@ class AuthorController extends AbstractController
             $authorsData[] = [
                 'id' => $author->getId(),
                 'name' => $author->getName(),
+                'email' => $author->getEmail(),
                 'articlesCount' => count($author->getArticles()),
             ];
         }
