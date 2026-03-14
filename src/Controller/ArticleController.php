@@ -25,7 +25,6 @@ public function index(EntityManagerInterface $entityManager): Response
     }
 
     return $this->render('article/index.html.twig', [
-        // Passiamo una stringa JSON già pronta
         'articles_json' => json_encode($articlesData), 
     ]);
 }

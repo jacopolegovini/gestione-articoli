@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Elenco Autori{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Elenco Autori</h1>
+    
+    <div id="app-authors" data-authors="{{ authors_json|e('html_attr') }}">
+        <p>Caricamento autori...</p>
+    </div>
+</div>
+{% endblock %}

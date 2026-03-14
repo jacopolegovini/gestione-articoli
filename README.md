@@ -41,6 +41,15 @@ docker compose exec php bin/console doctrine:database:create --if-not-exists
 docker compose exec php bin/console doctrine:migrations:migrate --no-interaction
 ```
 
+### 5. Configura le dipendenze Node.js e compila gli asset
+```
+npm install
+
+npx encore dev
+
+npx encore dev --watch
+```
+
 ---
 
 ## Utilizzo
@@ -60,9 +69,9 @@ Per popolare il database con un articolo di prova utilizza il comando personaliz
 docker compose exec php bin/console app:create-article
 ```
 
-Per visualizzare le informazioni principali di un articolo utilizza il comando personalizzato:
+Per visualizzare le informazioni principali di un articolo utilizza il comando personalizzato aggiungendo alla fine l'id:
 ```
-docker compose exec php bin/console app:show-article
+docker compose exec php bin/console app:show-article <id>
 ```
 
 ---
